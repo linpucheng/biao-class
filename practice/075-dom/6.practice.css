@@ -1,0 +1,25 @@
+button {
+  border: 0;
+  padding: 10px;
+  color: #000;
+}
+
+.dropdown {
+  background: #555;
+  position: absolute;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.dropdown a:hover {
+  background: rgba(0, 0, 0, .1);
+}
+
+[hidden] {
+  display: none;
+}

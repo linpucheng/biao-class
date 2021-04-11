@@ -1,0 +1,22 @@
+.biao-popup {
+  position: fixed;
+  z-index: 1000;
+  background: #fff;
+  border: 5px solid;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, .1);
+}
+
+.biao-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 999;
+}
+
+[hidden] {
+  display: none !important;
+}

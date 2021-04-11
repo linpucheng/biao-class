@@ -1,0 +1,63 @@
+<style>
+  input {
+    width: 100%;
+  }
+
+  input[type=checkbox],
+  input[type=radio] {
+    width: auto;
+  }
+</style>
+
+<form id="a">
+  <input type="text" name="name" placeholder="姓名" value="林圃成">
+  <input type="text" name="age" placeholder="年龄" value="32">
+  <div>
+    性别
+    <label for="male-radio">男</label>
+    <input type="radio" name="gender" id="male-radio" value="male" checked>
+    <label for="female-radio">女</label>
+    <input type="radio" name="gender" id="female-radio" value="female">
+  </div>
+  <div>
+    取向
+    <label for="male-checkbox">男</label>
+    <input type="checkbox" name="orientation" id="male-checkbox" value="male" checked>
+    <label for="female-checkbox">女</label>
+    <input type="checkbox" name="orientation" id="female-checkbox" value="female" checked>
+  </div>
+  <input type="text" name="height" placeholder="身高" value="170">
+  <input type="number" name="money" value="17">
+  <button type="submit">提交</button>
+</form>
+
+<form id="b">
+  <input type="text" name="name" placeholder="姓名">
+  <input type="text" name="age" placeholder="年龄">
+  <input type="email" name="email" placeholder="邮箱">
+  <input type="date" name="birthday" placeholder="生日">
+  <div>
+    性别
+    <label for="male-radio">男</label>
+    <input type="radio" name="gender" id="male-radio" value="male">
+    <label for="female-radio">女</label>
+    <input type="radio" name="gender" id="female-radio" value="female">
+  </div>
+  <div>
+    取向
+    <label for="male-checkbox">男</label>
+    <input type="checkbox" name="orientation" id="male-checkbox" value="male">
+    <label for="female-checkbox">女</label>
+    <input type="checkbox" name="orientation" id="female-checkbox" value="female">
+    <label for="car-checkbox">车</label>
+    <input type="checkbox" name="orientation" id="car-checkbox" value="car">
+  </div>
+  <input type="number" name="balance" placeholder="余额">
+  <button type="submit">提交</button>
+</form>
+
+<script src="./biao-form.js"></script>
+<script>
+  let data = biaoForm.getData(a);
+  console.log(data);
+</script>

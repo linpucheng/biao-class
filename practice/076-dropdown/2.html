@@ -1,0 +1,35 @@
+<style>
+  div {
+    background: rgba(0, 0, 0, .1);
+    padding: 10px;
+  }
+</style>
+
+<div class="a">
+  a
+  <div class="b">
+    b
+    <div class="c">c</div>
+  </div>
+</div>
+
+<script>
+  const a = document.querySelector('.a');
+  const b = document.querySelector('.b');
+  const c = document.querySelector('.c');
+
+  a.addEventListener('click', (e) => {
+    console.log(e.target);
+    console.log('a');
+  })
+
+  b.addEventListener('click', (e) => {
+    console.log(e.target);
+    console.log('b');
+  })
+
+  c.addEventListener('click', (e) => {
+    console.log(e.target);
+    console.log('c');
+  })
+</script>
